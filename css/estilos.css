@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background: #7A0017;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 85%;
+    background: #7A0017;
+    margin: 0 auto;
+}
+
+.cont{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    display: none;
+}
+
+.enlaces{
+    display: flex;
+    height: 100%;
+    width: 55%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conenla{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.enlaces a{
+    border-bottom: 6px solid transparent;
+    padding: 9px 0;
+    font-size: 1.1em;
+    transition: 1.5s ease;
+    color: #ffffff;
+    background-color: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.enlaces a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #0A8D76;
+    border-bottom: 6px solid #FF4F00;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cont .logo{
+    height: 90%;
+    margin: auto 0;
+}
+
+.cont .logo img{
+    object-fit: cover;
+    height: inherit;
+    cursor: pointer;
+}
+
+header .texto{
+    text-align: center;
+    color: #e7e436;
+    margin-top: 120px;
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+
+
+.contslider{
+    width: 100%;
+    height: auto;
+    background: #12634b;
+    margin: 0 auto;
+}
+
+.slider{
+    width: 100%;
+    background: #12634b;
+    margin: 0 auto;
+}
+
+.contslider img{
+    width: 100%;
+    height: 55vw;
+}
+
+
+/*-------------------------FIN DEL NAV----------------------------------------*/
+
+.cont1{
+    width: 100%;
+    background: #0A8D76;
+}
+
+.textcont{
+    width: 100%;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.textcont h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.textcont p{
+    color: #000;
+}
+
+.anima{
+    width: 100%;
+    height: 54vh;
+}
+
+.anima span{
+    font-family: fantasy;
+    position: absolute;
+    font-size: 3.5vh;
+    color: rgb(0, 0, 0);
+}
+
+.carteltext{
+    right: 20%;
+    top: 40%;
+    font-size: 2vw;
+    z-index: 1;
+    display: none;
+}
+
+.cartatext{
+    left: 15%;
+    top: 43%;
+    font-size: 2.2vw;
+    z-index: 2;
+    display: none;
+}
+
+.notitext{
+    right: 10%;
+    bottom: 15%;
+    font-size: 2.2vw;
+    z-index: 3;
+    display: none;
+}
+
+.carteli, .cartamenui, .reporterai{
+    display: none;
+}
+
+.cartel{
+    width: 31vh;
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    transition: 1s ease;
+}
+
+.cartamenu{
+    width: 20vh;
+    position: absolute;
+    bottom: 1px;
+    left: 25%;
+    transition: 1s ease;
+}
+
+.reportera{
+    width: 21vh;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transition: 1s ease;
+}
+
+.cartel:hover{
+    width: 35vh;
+}
+
+.cartamenu:hover{
+    width: 24vh;
+}
+
+.reportera:hover{
+    width: 25vh;
+}
+
+
+.contcaja{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.somoscaja{
+    width: 100%;
+}
+
+.somoscaja img{
+    width: 50px;
+    padding: 15px;
+}
+
+.somoscaja p{
+    width: 100%;
+    text-align: justify;
+    font-size: .8em;
+    color: #000;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px){
+
+    nav{
+        width: 100%;
+        background: #7A0017;
+        margin: 0 auto;
+    }
+
+    .icono{
+        display: flex;
+        margin-top: 8px;
+        justify-content: center;
+        height: 35px;
+        align-items: center;
+        color: #ffffff;
+        background: transparent;
+        padding: 10px;
+        border-radius: 100px;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .icono img{
+        height: 35px;
+    }
+
+    .enlaces{
+        position: fixed;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #7A0017;  /* fallback for old browsers */
+        /*LINK DE PAGINA PARA SACAR DEGRADADOS---------->   https://uigradients.com/#Wiretap*/
+        z-index: 90;
+    }
+
+    .cont{
+    width: 95%;
+    }
+
+    .conenla{
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: initial;
+        align-items: center;
+    }
+
+    .enlaces a{
+        font-family: 'Raleway', sans-serif;
+        transition: .8s ease;
+        width: 17%;
+    }
+
+    .enlaces a:hover{
+        border-bottom: 6px solid #0A8D76;
+        font-family: 'Raleway', sans-serif;
+        width: 22%;
+        background: #7A0017;
+    }
+
+    .uno{
+        clip-path: circle(0% at 92% 6%);
+        /*PAGINA PARA ANIMACION ---------> https://bennettfeely.com/clippy/*/  
+    }
+
+    .dos{
+        clip-path: circle(150% at 100% 0%);
+    }
+
+}
